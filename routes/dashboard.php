@@ -220,7 +220,7 @@
         
             <center>
             <div id="headerSection">
-            <a href="../routes/homepage.html"><button id="back-button"> Back</button></a>
+            <a href="../routes/candidatelogin.php"><button id="back-button"> Back</button></a>
             <a href="logout.php"><button id="logout-button">Logout</button></a>
             <fieldset style = "background-color:lightgray;padding:0 1rem;border-radius: 15px;border-width:6px;display:inline-block;">
             <h1 style="font-family:'Times New Roman';color: white;text-shadow: 2px 2px 4px #000000;"><u>Online Voting System</u></h1>  

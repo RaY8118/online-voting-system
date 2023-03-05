@@ -20,7 +20,7 @@
         $_SESSION['data'] = $data;
         if($role==1)
         echo '<script>
-                window.location = "../routes/homepage.html";
+                window.location = "../routes/candidatelogin.php";
             </script>';
         else if($role==2){
             echo '<script>
