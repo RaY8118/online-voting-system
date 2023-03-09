@@ -4,12 +4,12 @@
     $name = $_POST['name'];
     $uid = $_POST['uid'];
     $info = $_POST['info'];
-    $pic = $_FILES['pic']['name'];
-    $tmp_name = $_FILES['pic']['tmp_name'];
+    $image = $_FILES['image']['name'];
+    $tmp_name = $_FILES['image']['tmp_name'];
 
 
-    move_uploaded_file($tmp_name,"../uploads/$pic");
-    $insert = mysqli_query($connect,"insert into info (name, uid, info, pic) values('$name','$uid' ,'$info', '$pic' )");
+    move_uploaded_file($tmp_name,"../uploads/$image");
+    $insert = mysqli_query($connect,"insert into info (name, uid, info, photo) values('$name','$uid' ,'$info', '$image' )");
     if($insert){
         echo '<script>
                 alert("Infomartion Updated Successfully");

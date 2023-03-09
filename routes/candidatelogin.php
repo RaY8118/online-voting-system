@@ -73,7 +73,7 @@ $mysqli->close();
                 border-width: 0;
                 box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
                 box-sizing: border-box;
-                color: #36395A;
+                color:white;
                 cursor: pointer;
                 display: inline-flex;
                 font-family: "JetBrains Mono",monospace;
@@ -109,14 +109,28 @@ $mysqli->close();
                 box-shadow: #D6D6E7 0 3px 7px inset;
                 transform: translateY(2px);
             }
+			#proceedbtn{
+				text-decoration-color: white;
+			}
+			fieldset{
+				background-color:forestgreen;
+				padding:0 1rem;
+				border-radius: 15px;
+				border-width:6px;
+				display:inline-block;
+				width:95%;
+			}
 	</style>
 </head>
 
 <body>
 	<section>
-		<h1>Candidates Information</h1>
+		<center>
+	<fieldset>
+            <h1 style="font-family:'Times New Roman';color: white;text-shadow: 2px 2px 4px #000000;"><u>Candidates Information</u></h1>  
+            </fieldset></center><br><br>
 		<!-- TABLE CONSTRUCTION -->
-		<table>
+		<table style="width:100%;height:200px;";>
 			<tr>
 				<th>S.R</th>
 				<th>Name</th>
@@ -142,7 +156,7 @@ $mysqli->close();
 			?>
 		</table>
 	</section><br><br>
-	<center><a href="../routes/dashboard.php" ><button id="proceedbtn"> <span>Proceed</span></button></a></center>
+	<center><a href="../routes/dashboard.php" ><button id="proceedbtn"> <span><u>Proceed</u></span></button></a></center>
 	
 </body>
 

@@ -3,16 +3,21 @@
         <title>Online voting system - Registratrion</title>
         <link rel="stylesheet" href="../css/stylesheet.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+          b{
+            color:black;
+            font-weight: 800;
+            font-size: large;
+          }
+        </style>
     </head>
     <body>
         <center>
-            <div id="headerSection" style="padding-top:5px;padding-bottom: 5px;background-color: lightgray; border-radius:5px;width:auto;height:auto;">
-            <h1 style="color: white;text-shadow: 2px 2px 4px #000000;"><u>Online Voting System</u></h1>  
-            </div>
-            <hr>
-            <div id="regSection">
-            <div id="regsection" style="padding-top:5px;padding-bottom: 5px;background-color: darkgray; border-radius:5px;width:auto;height:auto;">
-                <h2 style="color: white;text-shadow: 2px 2px 4px #000000;">Registration</h2>
+            <div id="headsec" style="padding-top:5px;padding-bottom: 5px;background-color: lightgray; border-radius: 15px 50px;width:auto;height:auto;">
+            <h1 style="color: black;"><u>Online Voting System</u></h1>  
+            </div><br>
+            <div id="regsection" style="padding-top:5px;padding-bottom: 5px;background-color: darkgray; border-radius:15px;width:auto;height:auto;">
+                <h2 style="color: black;">Registration</h2>
                 </div><br>
                 <div id="regform"><form action="../api/register.php" method="POST" enctype="multipart/form-data">
                     <input type="text" name="name" placeholder="Name" required>&nbsp
@@ -28,20 +33,20 @@
                     <input type="password" name="cpass" placeholder="Confirm Password" required><br><br>
                     <input style="width: 31%" type="character(5)" name="UID" placeholder="UID" title="Enter " required><br><br>
                     <div id="upload" style="width: 30%">
-                        <b style="color:#da2909;">Upload image: <input type="file" id="profile" name="image" required></b>
+                        <b style="color:black;">Upload image: <input type="file" id="profile" name="image" required></b>
                     </div><br>
                     <div id="upload" style="width: 30%">
-                        <b style="color:red;">Select your role:</b>
+                        <b style="color:black;">Select your role:</b>
                         <select name="role">
                             <option value="1">Voter</option>
                             <option value="2">Candiates</option>
                             <option value="3">Admin</option>
                         </select><br>                   
-                    </div><br><br></div>
-                    <button class="regbtn" type="submit" >Register</button><br><br><br><br><br></div>
-                    <b style="color:black;text-shadow: 2px 2px 4px #000000;">Already user?</b> <a href="../"><b style="color:darkblue;text-shadow: 2px 2px 4px #000000;">Login here</b></a>
+                    </div><br><br>
+                    <button class="regbtn" type="submit" >Register</button><br><br><br>
+                    <b style="color:black;">Already user?</b> <a href="../"><b style="color:darkblue;">Login here</b></a>
                 </form>
-                
+                </div>
             </center>
     </body>
     <script>

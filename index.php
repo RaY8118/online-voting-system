@@ -5,16 +5,21 @@
             Online voting system-Home
         </title>
         <link rel="stylesheet" href="css/stylesheet.css">
+        <style>
+          b{
+            color:black;
+            font-weight: 800;
+            font-size: large;
+          }
+        </style>
     </head>
     <body>
         <center>
-        <div id="headsec"><h1>Online Voting System</h1></div>
-        <hr><br>
-        <div id="loginsec">
+        <div id="headsec" style="border-radius: 15px 50px; "><h1><u>Online Voting System</u></h1></div><br>
+        <div id="loginsec" style="border-radius: 15px; ">
         <h2>Login</h2>
     </div><br>
-        <div class="container">
-          <div class="namesec">
+          <div class="container">
         <form action="api/login.php" method="post">
             <b>Name:</b>
             <input input="text" name="usrname" placeholder="Enter Name" required><br>
@@ -23,19 +28,18 @@
             <b>Password:</b>
             <input input="password" type="password" id="psw" name="pass" placeholder="Enter password" required><br>
             <h3><b>Choose ur role: </b></h3><br>
-            <div class="select" style="width:300px;">
+            <div class="select" style="width:250px;height:50px;">
             <select name="role">
                 <option value="1">Voter</option>
                 <option value="2">Candiate</option>
                 <option value="3">Admin</option>
             </select><br><br>
-          </div><br><br>
-            <button class="submitbtn" role="button">Submit</button> 
-            <b style="color:black;text-shadow: 2px 2px 4px #000000;">New user?</b> <a href="routes/register.php"><b style="color:darkblue;text-shadow: 2px 2px 4px #000000;">Register here</b></a>
+          </div><br><br><br>
+            <button class="submitbtn" role="button">Submit</button><br><br><br>
+            <b style="color:black;">New user?</b> <a href="routes/register.php"><b style="color:darkblue;">Register here</b></a>
         </form>
       </div>
     </center>
-</div>
 <script>
     var myInput = document.getElementById("psw");
     var letter = document.getElementById("letter");
