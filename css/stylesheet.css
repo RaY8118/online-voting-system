@@ -63,13 +63,14 @@ input{
     box-shadow: 8px 8px 5px #444;
     padding: 8px 12px;
     background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+    font-family: cursive;
   }
   #headsec{
     width: auto;
     border: 1px solid #333;
     box-shadow: 8px 8px 5px #444;
     padding: 8px 12px;
-    background-image: linear-gradient(180deg, #fff, #fc9b9b 40%, #ff2b2b);
+    background-color: rgb(255, 255, 0);
   }
   .submitbtn {
     width: 100px;
@@ -183,3 +184,12 @@ select>option{
   padding: 8px 12px;
   background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
 }
+#resultsec
+{
+  width: 45%;
+  height: 8%;
+  border: 1px solid #333;
+  box-shadow: 8px 8px 5px #444;
+  padding: 8px 12px;
+  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+  }

@@ -9,14 +9,17 @@
             font-weight: 800;
             font-size: large;
           }
+          body{
+            background-color:aliceblue;
+          }
         </style>
     </head>
     <body>
         <center>
-            <div id="headsec" style="padding-top:5px;padding-bottom: 5px;background-color: lightgray; border-radius: 15px 50px;width:auto;height:auto;">
+            <div id="headsec" style=" border-radius: 15px 50px;height:10%;">
             <h1 style="color: black;"><u>Online Voting System</u></h1>  
             </div><br>
-            <div id="regsection" style="padding-top:5px;padding-bottom: 5px;background-color: darkgray; border-radius:15px;width:auto;height:auto;">
+            <div id="regsection" style="border-radius:15px;width:auto;height:8.5%;">
                 <h2 style="color: black;">Registration</h2>
                 </div><br>
                 <div id="regform"><form action="../api/register.php" method="POST" enctype="multipart/form-data">

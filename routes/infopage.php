@@ -8,7 +8,7 @@
         <center>
     <div id="headsec" style="border-radius: 15px 50px; "><h1><u>Online Voting System</u></h1></div><br>
         <div id="infotitle">
-        <h2><u>Candidates Information</u></h2>
+        <h2>Candidates Information</h2>
     </div><br>
         <div id="infosec">
         <form action="../api/info.php" method="post">

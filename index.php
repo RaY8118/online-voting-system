@@ -8,15 +8,18 @@
         <style>
           b{
             color:black;
-            font-weight: 800;
+            font-weight: 700;
             font-size: large;
+          }
+          body{
+            background-color: aliceblue;
           }
         </style>
     </head>
     <body>
         <center>
-        <div id="headsec" style="border-radius: 15px 50px; "><h1><u>Online Voting System</u></h1></div><br>
-        <div id="loginsec" style="border-radius: 15px; ">
+        <div id="headsec" style="border-radius: 15px 50px;font-family: cursive;"><h1><u>Online Voting System</u></h1></div><br>
+        <div id="loginsec" style="border-radius: 15px; font-family:cursive; ">
         <h2>Login</h2>
     </div><br>
           <div class="container">

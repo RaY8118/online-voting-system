@@ -20,39 +20,47 @@
     </head>
     <body>
         <style>
-            #profileSection {
-  width: 30%;
-  float: left;
-  padding: 20px;
-  font-family: Cursive;
-}
-
-#groupSection {
-  width: 60%;
-  float: right;
-  padding: 25px;
-  border-radius: 20px;
-  font-family: Cursive;
-}
             body{
-                background-color: #0e1525;
+                background-color:aliceblue;
             }
             #profileSection {
                 width: 30%;
                 float: left;
-                background-color: lightgray;
                 padding: 20px;
-                border-radius: 20px;
-                font-family: sans-serif;
+                font-family: Cursive;
             }
-
+            #dashsec{
+                width: auto;
+                border: 1px solid #333;
+                box-shadow: 8px 8px 5px #444;
+                border-radius: 15px 50px;
+                padding: 8px 12px;
+                background-color: yellow;
+                font-family: Cursive;
+            }
             #groupSection {
                 width: 60%;
                 float: right;
                 padding: 25px;
-                background-color: lightgray;
                 border-radius: 20px;
-                font-family: sans-serif;
+                font-family: Cursive;
+            }
+            #profileSection {
+                width: 30%;
+                border: 1px solid #333;
+                box-shadow: 8px 8px 5px #444;
+                border-radius: 15px;
+                padding: 8px 12px;
+                background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+            }
+
+            #groupSection {
+                width:65%;
+                border: 1px solid #333;
+                box-shadow: 8px 8px 5px #444;
+                border-radius: 15px;
+                padding: 8px 12px;
+                background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
             }
             #back-button {
                 float: left;
@@ -157,6 +165,7 @@
                 white-space: nowrap;
                 will-change: box-shadow,transform;
                 font-size: 18px;
+                font-family: cursive;
             }
 
             #back-button:focus {
@@ -201,6 +210,7 @@
                 white-space: nowrap;
                 will-change: box-shadow,transform;
                 font-size: 18px;
+                font-family: Cursive;
             }
 
             #logout-button:focus {
@@ -222,9 +232,8 @@
             <div id="headerSection">
             <a href="../routes/candidatelogin.php"><button id="back-button"> Back</button></a>
             <a href="logout.php"><button id="logout-button">Logout</button></a>
-            <fieldset style = "background-color:lightgray;padding:0 1rem;border-radius: 15px;border-width:6px;display:inline-block;">
-            <h1 style="font-family:'Times New Roman';color: white;text-shadow: 2px 2px 4px #000000;"><u>Online Voting System</u></h1>  
-            </fieldset>
+            <div id="dashsec"><h1><u>Online Voting System</u></h1> </div>
+             
         </div>
             </center>
             <hr>
