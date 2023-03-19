@@ -18,8 +18,8 @@
     </head>
     <body>
         <center>
-        <div id="headsec" style="border-radius: 15px 50px;font-family: cursive;"><h1><u>Online Voting System</u></h1></div><br>
-        <div id="loginsec" style="border-radius: 15px; font-family:cursive; ">
+        <div id="headsec" style="border-radius: 15px 50px;"><h1><u>Online Voting System</u></h1></div><br>
+        <div id="loginsec" style="border-radius: 15px;">
         <h2>Login</h2>
     </div><br>
           <div class="container">

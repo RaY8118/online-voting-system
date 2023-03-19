@@ -16,7 +16,7 @@
     </head>
     <body>
         <center>
-            <div id="headsec" style=" border-radius: 15px 50px;height:10%;">
+            <div id="headsec" style=" border-radius: 15px 50px;">
             <h1 style="color: black;"><u>Online Voting System</u></h1>  
             </div><br>
             <div id="regsection" style="border-radius:15px;width:auto;height:8.5%;">

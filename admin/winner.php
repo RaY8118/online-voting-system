@@ -22,7 +22,7 @@ if ($mysqli->connect_error) {
 }
 
 // SQL query to select data from database
-$sql = " SELECT * FROM info ORDER BY id ASC ";
+$sql = " SELECT id,name,photo,MAX(votes) from user where role = 2; ";
 $result = $mysqli->query($sql);
 $mysqli->close();
 ?>
@@ -32,7 +32,7 @@ $mysqli->close();
 
 <head>
 	<meta charset="UTF-8">
-	<title> Online voting system-Candidates Information</title>
+	<title> Online voting system-Winner Page</title>
 	<!-- CSS FOR STYLING THE PAGE -->
 	<style>
 		table {
@@ -99,14 +99,37 @@ $mysqli->close();
     background-position: -200%;
     transition: background 300ms ease-in-out;
   }
+  #logoutbutton {
+    align-items: right;
+    padding: 0%;
+    width: 100px;
+    height: 38px;
+    color: black;
+    border-radius: 5px;
+    background-color: #F4F200;
+    background-image: #F4F200;
+    background-image: -moz-linear-gradient(top, #fff 0%, #F4F200 100%); 
+    background-image: -webkit-linear-gradient(top, #fff 0%,#F4F200 100%); 
+    background-image: linear-gradient(to bottom, #fff 0%,#F4F200 100%); 
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+  }
+  #logoutbutton:hover {
+    background-position: -200%;
+    transition: background 300ms ease-in-out;
+  }
 	</style>
 </head>
 
 <body>
+<a href="logout.php"><button id="logoutbutton" style="align-items:right">Logout</button></a>
 	<section>
 		<center>
 			<div id="candsec">
-			<h1 style="font-family:'Times New Roman';color: white;text-shadow: 2px 2px 4px #000000;"><u>Candidates Information</u></h1>  
+			<h1 style="font-family:'Times New Roman';color: white;text-shadow: 2px 2px 4px #000000;"><u>Winner Page</u></h1>  
 			</div>
         </center><br><br>
 		<!-- TABLE CONSTRUCTION -->
@@ -128,8 +151,8 @@ $mysqli->close();
 					ROW OF EVERY COLUMN -->
 				<td><?php echo $rows['id'];?></td>
 				<td><?php echo $rows['name'];?></td>
-				<td><?php echo $rows['uid'];?></td>
-				<td><?php echo $rows['info'];?></td>
+				<td><?php echo $rows['photo'];?></td>
+				<td><?php echo $rows['MAX(votes)'];?></td>
 			</tr>
 			<?php
 				}

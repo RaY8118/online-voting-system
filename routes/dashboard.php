@@ -27,25 +27,6 @@
                 width: 30%;
                 float: left;
                 padding: 20px;
-                font-family: Cursive;
-            }
-            #dashsec{
-                width: auto;
-                border: 1px solid #333;
-                box-shadow: 8px 8px 5px #444;
-                border-radius: 15px 50px;
-                padding: 8px 12px;
-                background-color: yellow;
-                font-family: Cursive;
-            }
-            #groupSection {
-                width: 60%;
-                float: right;
-                padding: 25px;
-                border-radius: 20px;
-                font-family: Cursive;
-            }
-            #profileSection {
                 width: 30%;
                 border: 1px solid #333;
                 box-shadow: 8px 8px 5px #444;
@@ -53,8 +34,18 @@
                 padding: 8px 12px;
                 background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
             }
-
+            #dashsec{
+                width: auto;
+                border: 1px solid #333;
+                box-shadow: 8px 8px 5px #444;
+                border-radius: 15px 50px;
+                padding: 8px 12px;
+                background: linear-gradient(109.6deg, rgb(255, 219, 47) 11.2%, rgb(244, 253, 0) 100.2%);
+            }
             #groupSection {
+                float: right;
+                padding: 25px;
+                border-radius: 20px;
                 width:65%;
                 border: 1px solid #333;
                 box-shadow: 8px 8px 5px #444;
@@ -88,9 +79,6 @@
                 border-radius: 7px;
                 width:7%;
                 height:4%;
-            }
-            #headerSection{
-                font-family: sans-serif;
             }
             .votebtn {
                 align-items: center;
@@ -139,7 +127,7 @@
             #back-button {
                 align-items: left;
                 appearance: none;
-                background-color: yellow;
+                background-color: greenyellow;
                 border-radius: 4px;
                 border-width: 0;
                 box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
@@ -165,7 +153,6 @@
                 white-space: nowrap;
                 will-change: box-shadow,transform;
                 font-size: 18px;
-                font-family: cursive;
             }
 
             #back-button:focus {
@@ -184,7 +171,7 @@
             #logout-button {
                 align-items: right;
                 appearance: none;
-                background-color: yellow;
+                background-color: orange;
                 border-radius: 4px;
                 border-width: 0;
                 box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
@@ -210,7 +197,6 @@
                 white-space: nowrap;
                 will-change: box-shadow,transform;
                 font-size: 18px;
-                font-family: Cursive;
             }
 
             #logout-button:focus {
@@ -227,17 +213,14 @@
                 transform: translateY(2px);
             }
         </style>
-        
             <center>
             <div id="headerSection">
             <a href="../routes/candidatelogin.php"><button id="back-button"> Back</button></a>
             <a href="logout.php"><button id="logout-button">Logout</button></a>
             <div id="dashsec"><h1><u>Online Voting System</u></h1> </div>
-             
         </div>
             </center>
             <hr>
-
             <div id="mainSection">
                 <div id="profileSection">
                     <center><img src="../uploads/<?php echo $data['photo']?>" height="120" width="120"></center><br>
