@@ -18,9 +18,6 @@
             <input input="number" name="uid" placeholder="Enter the UID" required><br><br>
             <b>Info: </b>
             <input input="text" name="info" placeholder="Enter about yourself" required><br><br>
-            <div id="upload" style="width: 30%">
-                        <b style="color:black;">Upload image: <input type="file" id="profile" name="image" required></b>
-                    </div>
               <br><br><br>
             <button class="submitbtn">Submit</button>
         </form>

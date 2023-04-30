@@ -2,7 +2,7 @@
 $hostName = "localhost";
 $userName = "root";
 $password = "";
-$databaseName = "demo";
+$databaseName = "voters_db";
  $connect = new mysqli($hostName, $userName, $password, $databaseName);
 // Check connection
 if ($connect->connect_error) {

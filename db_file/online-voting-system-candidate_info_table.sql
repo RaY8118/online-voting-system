@@ -32,8 +32,7 @@ CREATE TABLE `info` (
   `id` int(11) NOT NULL,
   `name` text NOT NULL,
   `uid` varchar(10) NOT NULL,
-  `info` text NOT NULL,
-  `photo` varchar(255) NOT NULL
+  `info` text NOT NULL
  
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 

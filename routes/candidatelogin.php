@@ -6,7 +6,7 @@ $user = 'root';
 $password = '';
 
 // Database name is geeksforgeeks
-$database = 'demo';
+$database = 'voters_db';
 
 // Server is localhost with
 // port number 3306
@@ -32,6 +32,7 @@ $mysqli->close();
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Online voting system-Candidates Information</title>
 	<!-- CSS FOR STYLING THE PAGE -->
 	<style>
@@ -68,37 +69,37 @@ $mysqli->close();
 		th{
 			background-color: olivedrab;
 		}
-			#candsec{
-  				width: auto;
-  				border: 1px solid #333;
-  				box-shadow: 8px 8px 5px #444;
-  				padding: 8px 12px;
-  				background: linear-gradient(109.6deg, rgb(0, 204, 130) 11.2%, rgb(58, 181, 46) 91.7%);
-				border-radius: 15px 50px;
-  			}
-			body{
-				background-color:aliceblue;
-			}
+		#candsec{
+  			width: auto;
+  			border: 1px solid #333;
+  			box-shadow: 8px 8px 5px #444;
+  			padding: 8px 12px;
+  			background: linear-gradient(109.6deg, rgb(0, 204, 130) 11.2%, rgb(58, 181, 46) 91.7%);
+			border-radius: 15px 50px;
+  		}
+		body{
+			background-color:aliceblue;
+		}
 			#proceedbtn {
-    width: 100px;
-    height: 38px;
-    color: black;
-    border-radius: 5px;
-    background-color: #F4F200;
-    background-image: #F4F200;
-    background-image: -moz-linear-gradient(top, #fff 0%, #F4F200 100%); 
-    background-image: -webkit-linear-gradient(top, #fff 0%,#F4F200 100%); 
-    background-image: linear-gradient(to bottom, #fff 0%,#F4F200 100%); 
-    background-size: 300px;
-    background-repeat: no-repeat;
-    background-position: 0%;
-    -webkit-transition: background 300ms ease-in-out;
-    transition: background 300ms ease-in-out;
-  }
-  #proceedbtn:hover {
-    background-position: -200%;
-    transition: background 300ms ease-in-out;
-  }
+    		width: 100px;
+    		height: 38px;
+    		color: black;
+    		border-radius: 5px;
+    		background-color: #F4F200;
+    		background-image: #F4F200;
+    		background-image: -moz-linear-gradient(top, #fff 0%, #F4F200 100%); 
+    		background-image: -webkit-linear-gradient(top, #fff 0%,#F4F200 100%); 
+    		background-image: linear-gradient(to bottom, #fff 0%,#F4F200 100%); 
+    		background-size: 300px;
+    		background-repeat: no-repeat;
+    		background-position: 0%;
+    		-webkit-transition: background 300ms ease-in-out;
+    		transition: background 300ms ease-in-out;
+  		}
+  		#proceedbtn:hover {
+    		background-position: -200%;
+    		transition: background 300ms ease-in-out;
+  		}
 	</style>
 </head>
 

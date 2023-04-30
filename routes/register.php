@@ -24,7 +24,7 @@
                 </div><br>
                 <div id="regform"><form action="../api/register.php" method="POST" enctype="multipart/form-data">
                     <input type="text" name="name" placeholder="Name" required>&nbsp
-                    <input type="number" name="mob" placeholder="Mobile_No" required><br><br>
+                    <input type="number" name="mob" placeholder="Mobile No" required><br><br>
                     <input type="password" name="pass" placeholder="Password"id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>&nbsp
             <div id="message">
               <h3>Password must contain the following:  </h3>

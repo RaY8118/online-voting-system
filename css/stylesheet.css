@@ -249,14 +249,6 @@ select>option{
     background-position: -200%;
     transition: background 300ms ease-in-out;
   }
-  #dashSec{
-    width: auto;
-    border: 1px solid #333;
-    box-shadow: 8px 8px 5px #444;
-    border-radius: 15px 50px;
-    padding: 8px 12px;
-    background: linear-gradient(109.6deg, rgb(255, 219, 47) 11.2%, rgb(244, 253, 0) 100.2%);
-}
 #groupsection {
   float: right;
   padding: 25px;

@@ -6,7 +6,7 @@ $user = 'root';
 $password = '';
 
 // Database name is geeksforgeeks
-$database = 'demo';
+$database = 'voters_db';
 
 // Server is localhost with
 // port number 3306
@@ -22,7 +22,7 @@ if ($mysqli->connect_error) {
 }
 
 // SQL query to select data from database
-$sql = " SELECT id,name,photo,MAX(votes) from user where role = 2; ";
+$sql = " SELECT name from user where role = 2 and votes = ( select max(votes) from user ); ";
 $result = $mysqli->query($sql);
 $mysqli->close();
 ?>
@@ -64,81 +64,43 @@ $mysqli->close();
 
 		td {
 			font-weight: lighter;
+			font-size:23px;
+			font-family:'Times New Roman';
+			color: white;
+			text-shadow: 2px 2px 4px #000000;
 		}
 		th{
-			background-color: olivedrab;
+			background-color:#34eb7d;
+			font-size:34px;
+			color:white;
+			text-shadow: 2px 2px 4px #000000;
+			font-family:'Times New Roman';
 		}
-			#candsec{
-  				width: auto;
-  				border: 1px solid #333;
-  				box-shadow: 8px 8px 5px #444;
-  				padding: 8px 12px;
-  				background: linear-gradient(109.6deg, rgb(0, 204, 130) 11.2%, rgb(58, 181, 46) 91.7%);
-				border-radius: 15px 50px;
-  			}
-			body{
-				background-color:aliceblue;
-			}
-			#proceedbtn {
-    width: 100px;
-    height: 38px;
-    color: black;
-    border-radius: 5px;
-    background-color: #F4F200;
-    background-image: #F4F200;
-    background-image: -moz-linear-gradient(top, #fff 0%, #F4F200 100%); 
-    background-image: -webkit-linear-gradient(top, #fff 0%,#F4F200 100%); 
-    background-image: linear-gradient(to bottom, #fff 0%,#F4F200 100%); 
-    background-size: 300px;
-    background-repeat: no-repeat;
-    background-position: 0%;
-    -webkit-transition: background 300ms ease-in-out;
-    transition: background 300ms ease-in-out;
-  }
-  #proceedbtn:hover {
-    background-position: -200%;
-    transition: background 300ms ease-in-out;
-  }
-  #logoutbutton {
-    align-items: right;
-    padding: 0%;
-    width: 100px;
-    height: 38px;
-    color: black;
-    border-radius: 5px;
-    background-color: #F4F200;
-    background-image: #F4F200;
-    background-image: -moz-linear-gradient(top, #fff 0%, #F4F200 100%); 
-    background-image: -webkit-linear-gradient(top, #fff 0%,#F4F200 100%); 
-    background-image: linear-gradient(to bottom, #fff 0%,#F4F200 100%); 
-    background-size: 300px;
-    background-repeat: no-repeat;
-    background-position: 0%;
-    -webkit-transition: background 300ms ease-in-out;
-    transition: background 300ms ease-in-out;
-  }
-  #logoutbutton:hover {
-    background-position: -200%;
-    transition: background 300ms ease-in-out;
-  }
+		#candsec{
+  			width: auto;
+  			border: 1px solid #333;
+  			box-shadow: 8px 8px 5px #444;
+  			padding: 8px 12px;
+  			background: linear-gradient(109.6deg, rgb(0, 204, 130) 11.2%, rgb(58, 181, 46) 91.7%);
+			border-radius: 15px 50px;
+  		}
+		body{
+			background-color:aliceblue;
+		}
 	</style>
 </head>
 
 <body>
-<a href="logout.php"><button id="logoutbutton" style="align-items:right">Logout</button></a>
 	<section>
 		<center>
 			<div id="candsec">
-			<h1 style="font-family:'Times New Roman';color: white;text-shadow: 2px 2px 4px #000000;"><u>Winner Page</u></h1>  
+			<h1 style="font-family:'Times New Roman';color: white;text-shadow: 2px 2px 4px #000000;">Winner</h1>  
 			</div>
         </center><br><br>
 		<!-- TABLE CONSTRUCTION -->
 		<table style="width:100%;height:200px;";>
 			<tr>
-				<th>S.R</th>
 				<th>Name</th>
-				<th>UID</th>
-				<th>INFORMATION</th>
 			</tr>
 			<!-- PHP CODE TO FETCH DATA FROM ROWS -->
 			<?php
@@ -149,18 +111,13 @@ $mysqli->close();
 			<tr>
 				<!-- FETCHING DATA FROM EACH
 					ROW OF EVERY COLUMN -->
-				<td><?php echo $rows['id'];?></td>
 				<td><?php echo $rows['name'];?></td>
-				<td><?php echo $rows['photo'];?></td>
-				<td><?php echo $rows['MAX(votes)'];?></td>
 			</tr>
 			<?php
 				}
 			?>
 		</table>
 	</section><br><br>
-	<center><a href="../routes/dashboard.php" ><button id="proceedbtn"> <span><u>Proceed</u></span></button></a></center>
-	
 </body>
 
 </html>

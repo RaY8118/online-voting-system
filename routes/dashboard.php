@@ -15,13 +15,17 @@
 
 <html>
     <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Online voting system - Dashboard</title>
         <link rel="stylesheet" href="../css/stylesheet.css">
     </head>
     <body>
         <style>
             body{
-                background-color:aliceblue;
+                background-image: url(../images/back.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
             }
             #profileSection {
                 width: 30%;
@@ -34,14 +38,7 @@
                 padding: 8px 12px;
                 background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
             }
-            #dashsec{
-                width: auto;
-                border: 1px solid #333;
-                box-shadow: 8px 8px 5px #444;
-                border-radius: 15px 50px;
-                padding: 8px 12px;
-                background: linear-gradient(109.6deg, rgb(255, 219, 47) 11.2%, rgb(244, 253, 0) 100.2%);
-            }
+            
             #groupSection {
                 float: right;
                 padding: 25px;
@@ -220,12 +217,12 @@
             <div id="dashsec"><h1><u>Online Voting System</u></h1> </div>
         </div>
             </center>
-            <hr>
+            <br>
             <div id="mainSection">
                 <div id="profileSection">
                     <center><img src="../uploads/<?php echo $data['photo']?>" height="120" width="120"></center><br>
                     <b>Name : </b><?php echo $data['name'] ?><br><br>
-                    <b>Mobile : </b><?php echo $data['mobile'] ?><br><br>
+                    <b>Mobile No : </b><?php echo $data['mobile'] ?><br><br>
                     <b>UID : </b><?php echo $data['UID'] ?><br><br>
                     <b>Status : </b><?php echo $status ?>
                 </div>

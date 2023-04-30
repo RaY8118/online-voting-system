@@ -19,7 +19,20 @@
     else{
         move_uploaded_file($tmp_name,"../uploads/$image");
         $insert = mysqli_query($connect, "insert into user (name, mobile, password, UID, photo, status, votes, role) values('$name', '$mobile', '$pass', '$UID', '$image', 0, 0, '$role') ");
-        if($insert){
+        if($insert && $role == 1){
+            echo '<script>
+                    alert("Registration successfull!");
+                    window.location = "../";
+                </script>';
+        }
+        elseif($insert && $role == 2){
+            echo '<script>
+                alert("Registration successfull!");
+                alert("Please enter your details in the next form")
+            window.location = "../routes/infopage.php";
+        </script>';
+        }
+        else{
             echo '<script>
                     alert("Registration successfull!");
                     window.location = "../";

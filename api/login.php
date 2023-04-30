@@ -22,11 +22,6 @@
         echo '<script>
                 window.location = "../routes/candidatelogin.php";
             </script>';
-        else if($role==2){
-            echo '<script>
-            window.location = "../routes/infopage.php";
-        </script>';
-        }
         else{
             echo '<script>
             window.location = "../admin/result.php";
