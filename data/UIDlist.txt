@@ -1,0 +1,22 @@
+Voters List:
+Voter1 - V1001
+Voter2 - V1002
+Voter3 - V1003
+Voter4 - V1004
+Voter5 - V1005
+Voter6 - V1006
+Voter7 - V1007
+Voter8 - V1008
+Voter9 - V1009
+Voter10 - V1010
+
+
+Candiate List:
+Cand1 - C1001  Info:
+Cand2 - C1002
+Cand3 - C1003
+Cand4 - C1004
+
+
+Admins:
+Admin - A1001

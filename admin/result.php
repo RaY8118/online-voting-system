@@ -7,7 +7,7 @@
 ?>
 <html>
     <head>
-        <title>Online voting system - Results</title>
+        <title>Online Polling - Results</title>
         <link rel="stylesheet" href="../css/stylesheet.css">
     </head>
     <body>
@@ -78,7 +78,7 @@
         </style>
       <center>
             <div id="headerSection">
-            <div id="resultsec"><h1><u>Online Voting System</u></h1> </div>
+            <div id="resultsec"><h1><u>Online Polling</u></h1> </div>
         </div>
             </center>
                 <hr>

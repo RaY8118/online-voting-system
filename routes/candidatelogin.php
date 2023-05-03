@@ -33,7 +33,7 @@ $mysqli->close();
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> Online voting system-Candidates Information</title>
+	<title> Online Polling-Candidates Information</title>
 	<!-- CSS FOR STYLING THE PAGE -->
 	<style>
 		table {

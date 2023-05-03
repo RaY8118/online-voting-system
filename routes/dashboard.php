@@ -214,7 +214,7 @@
             <div id="headerSection">
             <a href="../routes/candidatelogin.php"><button id="back-button"> Back</button></a>
             <a href="logout.php"><button id="logout-button">Logout</button></a>
-            <div id="dashsec"><h1><u>Online Voting System</u></h1> </div>
+            <div id="dashsec"><h1><u>Online Polling</u></h1> </div>
         </div>
             </center>
             <br>

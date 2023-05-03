@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Online voting system - Registratrion</title>
+        <title>Online Polling - Registratrion</title>
         <link rel="stylesheet" href="../css/stylesheet.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
@@ -17,7 +17,7 @@
     <body>
         <center>
             <div id="headsec" style=" border-radius: 15px 50px;">
-            <h1 style="color: black;"><u>Online Voting System</u></h1>  
+            <h1 style="color: black;"><u>Online Polling</u></h1>  
             </div><br>
             <div id="regsection" style="border-radius:15px;width:auto;height:8.5%;">
                 <h2 style="color: black;">Registration</h2>
@@ -34,7 +34,7 @@
               <p id="length" class="invalid">Minimum <b>8 characters </b></p>
               </div>
                     <input type="password" name="cpass" placeholder="Confirm Password" required><br><br>
-                    <input style="width: 31%" type="character(5)" name="UID" placeholder="UID" title="Enter " required><br><br>
+                    <input style="width: 31%" type="character(5)" name="UID" placeholder="UID" title="Enter ur UID " required><br><br>
                     <div id="upload" style="width: 30%">
                         <b style="color:black;">Upload image: <input type="file" id="profile" name="image" required></b>
                     </div><br>

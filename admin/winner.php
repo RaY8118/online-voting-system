@@ -32,7 +32,7 @@ $mysqli->close();
 
 <head>
 	<meta charset="UTF-8">
-	<title> Online voting system-Winner Page</title>
+	<title> Online Polling-Winner Page</title>
 	<!-- CSS FOR STYLING THE PAGE -->
 	<style>
 		table {

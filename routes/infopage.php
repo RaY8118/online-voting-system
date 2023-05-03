@@ -1,12 +1,12 @@
 <html>
     <head>
-        <title>Online voting system-Information</title>
+        <title>Online Polling-Information</title>
         <link rel="stylesheet" href="../css/stylesheet.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <center>
-    <div id="headsec" style="border-radius: 15px 50px; "><h1><u>Online Voting System</u></h1></div><br>
+    <div id="headsec" style="border-radius: 15px 50px; "><h1><u>Online Polling</u></h1></div><br>
         <div id="infotitle">
         <h2>Candidates Information</h2>
     </div><br>

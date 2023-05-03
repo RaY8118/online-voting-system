@@ -2,7 +2,7 @@
     <head>
       <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>
-            Online voting system-Home
+            Online Polling-Home
         </title>
         <link rel="stylesheet" href="css/stylesheet.css">
         <style>
@@ -18,7 +18,7 @@
     </head>
     <body>
         <center>
-        <div id="headsec" style="border-radius: 15px 50px;"><h1><u>Online Voting System</u></h1></div><br>
+        <div id="headsec" style="border-radius: 15px 50px;"><h1><u>Online Polling</u></h1></div><br>
         <div id="loginsec" style="border-radius: 15px;">
         <h2>Login</h2>
     </div><br>
