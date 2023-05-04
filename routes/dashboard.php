@@ -218,7 +218,7 @@
         </div>
             </center>
             <br>
-            <div id="mainSection">
+            <div id="mainSection">  
                 <div id="profileSection">
                     <center><img src="../uploads/<?php echo $data['photo']?>" height="120" width="120"></center><br>
                     <b>Name : </b><?php echo $data['name'] ?><br><br>

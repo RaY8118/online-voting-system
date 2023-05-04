@@ -12,7 +12,7 @@ Voter10 - V1010
 
 
 Candiate List:
-Cand1 - C1001  Info:
+Cand1 - C1001  
 Cand2 - C1002
 Cand3 - C1003
 Cand4 - C1004
